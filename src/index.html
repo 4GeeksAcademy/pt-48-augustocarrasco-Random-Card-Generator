@@ -15,6 +15,7 @@
       >
         <h1 class="text-2xl text-gray-300">Have your Random Card</h1>
         <div
+          id="carta"
           class="flex flex-col justify-between items-center bg-blend-soft-light bg-orange-100 rounded-lg h-4/6 w-3/6  shadow-xl shadow-slate-800"
         >
           <div class="self-start m-2 numeros text-4xl"></div>
@@ -24,11 +25,26 @@
       </div>
       <div class="flex w-1/4 h-fit flex-row justify-evenly items-center mt-4">
         <button
+          id="newcardbutton"
           class="p-3 bg-teal-500  border-emerald-950 rounded-md shadow-sm font-semibold text-xs hover:bg-teal-300 active:scale-110"
         >
           New Card
         </button>
         <button
+        id="starttimer"
+        class="p-3 bg-teal-500  border-emerald-950 rounded-md shadow-sm font-semibold text-xs hover:bg-teal-300 active:scale-110"
+        >
+          Start Timer
+        </button>
+        <p class='text-white hidden mx-2' id="timerp" >New card In: <span id="timercount"></span></p>
+        <button
+        id="stoptimer"
+        class="p-3 bg-teal-500  border-emerald-950 rounded-md shadow-sm font-semibold text-xs hover:bg-teal-300 active:scale-110 hidden"
+        >
+          Stop Timer
+        </button>
+        <button
+          id="resizebutton"
           class="p-3 bg-teal-500  border-emerald-950 rounded-md shadow-sm  font-semibold text-xs hover:bg-teal-300 active:scale-110"
         >
           Resize
