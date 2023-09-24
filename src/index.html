@@ -8,22 +8,22 @@
   </head>
   <body>
     <div
-      class="w-screen h-screen bg-green-900 flex justify-center items-center flex-col"
+      class="w-screen h-screen min-h-96 bg-green-900 flex justify-center items-center flex-col "
     >
       <div
-        class="flex bg-gray-900/50 w-1/4 h-1/2 flex-col items-center justify-evenly  rounded-2xl shadow-2xl"
+        class="flex bg-gray-900/50 lg:w-1/4 lg:h-1/2  w-2/4 h-2/4 min-h-fit flex-col items-center justify-around rounded-2xl shadow-2xl p-2"
       >
-        <h1 class="text-2xl text-gray-300">Have your Random Card</h1>
+        <h1 class="text-2xl text-gray-300 text-center">Have your Random Card</h1>
         <div
           id="carta"
-          class="flex flex-col justify-between items-center bg-blend-soft-light bg-orange-100 rounded-lg h-4/6 w-3/6  shadow-xl shadow-slate-800"
+          class="flex flex-col justify-between items-center bg-blend-soft-light bg-orange-100 rounded-lg lg:h-4/6 lg:w-3/6 w-2/6 h-2/4 min-h-fit shadow-xl shadow-slate-800"
         >
-          <div class="self-start m-2 numeros text-4xl"></div>
-          <div class="self-center text-9xl" id="palo"></div>
-          <div class="self-end rotate-180 m-2 numeros text-4xl"></div>
+          <div class="self-start m-2 numeros  text-xl lg:text-4xl"></div>
+          <div class="self-center lg:text-9xl text-5xl" id="palo"></div>
+          <div class="self-end rotate-180 m-2 numeros  text-md lg:text-4xl"></div>
         </div>
       </div>
-      <div class="flex w-1/4 h-fit flex-row justify-evenly items-center mt-4">
+      <div class="flex lg:w-1/4 lg:h-fit w-1/2 h-fit flex-row justify-evenly items-center mt-4">
         <button
           id="newcardbutton"
           class="p-3 bg-teal-500  border-emerald-950 rounded-md shadow-sm font-semibold text-xs hover:bg-teal-300 active:scale-110"
